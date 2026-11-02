@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Akkana</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sign-in">
+        <h2>Sign In</h2>
+        <p>Username</p>
+        <input type="text" id="user-signin">
+        <p>Password</p>
+        <input type="password" id="pass-signin"> 
+        <button id="submit-signin">Confirm</button>
+        <p>Don't have an account yet? <a  href = "#"onclick="signUp(); return false;">Click Here!</a></p>
+    </div>
+
+    <div class="sign-up">
+        <h2>Sign Up</h2>
+        <p>Username</p>
+        <input type="text" id="user-signup">
+        <p>Password</p>
+        <input type="password" id="pass-signup"> 
+    <!--    <p>School</p>
+        <input type="text" id="school-signup">  -->
+        <button id="submit-signup">Join Us</button>
+        <p>Already have an account? <a href = "#"onclick="signIn(); return false;">Click Here!</a></p>
+    </div>
+
+    <script src="login.js"></script>
+    
+</body>
+</html>

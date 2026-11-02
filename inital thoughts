@@ -1,0 +1,42 @@
+AKKANA - Courses for students (Beta)
+
+Side-Bar:
+
+Dashboard
+    contains stats for both ALL and SPECIFIED course(s) + Course shortcut + Your remaining hearts
+
+Courses
+    here you can find some courses
+        most of the courses are bundled as like Grade 7, Programming and some stuff
+
+People
+    Message people here + create a group chat + AI
+
+Generate
+    Generate questionnaires
+
+Shop
+    buy some stuff here
+
+Leaderboard
+    shows leaderboard for Daily, Weekly, Monthly and All Time
+
+More
+    contains other stuff
+
+        About
+            what this is about
+        
+        Logs
+            update information
+        
+        Contact Us
+            shows a textbox to tell the crator (me) some stuff
+        
+        Settings
+            contains some stuff and includes:
+
+                - Insert Google API Key
+                - Insert Administrator Prompt
+                - Log Out
+                - Delete Account
