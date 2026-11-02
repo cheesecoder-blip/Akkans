@@ -50,3 +50,15 @@ body {
   padding-top: 20px;
   margin: 5px 0;
 }
+
+#user-signup-warning {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#user-signup-warning2 {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
