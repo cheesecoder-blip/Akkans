@@ -24,17 +24,20 @@
     <div class="sign-up">
         <h2>Sign Up</h2>
         <p>Username</p>
-        <input type="text" id="user-signup">
+        <input type="text" id="user-signup" required>
         <p id="user-signup-warning">Usernames can not have special characters nor digits!</p>
         <p id="user-signup-warning2">Usernames must be between 3 and 15 characters long!</p>
         <p>Password</p>
-        <input type="password" id="pass-signup"> 
+        <input type="password" id="pass-signup" required> 
+        <p>Email</p>
+        <input type="email" id="email-signup" required>
     <!--    <p>School</p>
         <input type="text" id="school-signup">  -->
         <button id="submit-signup">Join Us</button>
         <p>Already have an account? <a href = "#"onclick="signIn(); return false;">Click Here!</a></p>
     </div>
 
+    <script src="https://laxhmadhlmafruoigkjm.supabase.co"></script>
     <script src="login.js"></script>
     
 </body>
