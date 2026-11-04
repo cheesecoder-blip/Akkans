@@ -2,7 +2,7 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const supabaseClient = createClient(
     "https://laxhmadhlmafruoigkjm.supabase.co",
-    "sb_publishable_imUHAb8WgCiHB_NnWkq55A_JDiFlzX6"
+    "sb_publishable_pfznL70y3y5llqAMftMImA_BR53pABI"
 );
 
 function signUp() {
