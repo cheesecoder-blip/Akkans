@@ -118,7 +118,7 @@ async function registerUser() {
         return;
     }
 
-    window.location.href = "dashboard.html";
+    window.location.href = "dashboard/dashboard.html";
 }
 
 document.getElementById("submit-signup").addEventListener("click", registerUser);
