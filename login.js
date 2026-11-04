@@ -102,7 +102,7 @@ async function registerUser() {
         return;
     }
 
-    const { error } = await supabaseClient.auth.signUp({
+   const { data, error } = await supabaseClient.auth.signUp({
         email: email,
         password: password,
         options: {
@@ -118,7 +118,11 @@ async function registerUser() {
         return;
     }
 
+    if (data.session) {
     window.location.href = "dashboard/dashboard.html";
+} else {
+    alert("Account created! Please check your email to confirm your account.");
+}
 }
 
 document.getElementById("submit-signup").addEventListener("click", registerUser);
