@@ -25,10 +25,12 @@
         <h2>Sign Up</h2>
         <p>Username</p>
         <input type="text" id="user-signup" required>
-        <p id="user-signup-warning">Usernames can not have special characters nor digits!</p>
+        <p id="user-signup-warning">Usernames can only contain letters and no spaces!</p>
         <p id="user-signup-warning2">Usernames must be between 3 and 15 characters long!</p>
         <p>Password</p>
         <input type="password" id="pass-signup" required> 
+        <p>Nametag</p>
+    <input type="text" id="nametag-signup">
         <p>Email</p>
         <input type="email" id="email-signup" required>
     <!--    <p>School</p>
@@ -37,5 +39,6 @@
         <p>Already have an account? <a href = "#"onclick="signIn(); return false;">Click Here!</a></p>
     </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
         <script type="module" src="login.js"></script>
 </html>
