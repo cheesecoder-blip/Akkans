@@ -1,5 +1,8 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
+console.log("Supabase URL:", "https://laxhmadhlmafruoigkjm.supabase.co");
+console.log("API key prefix:", "sb_publishable_");
+
 const supabaseClient = createClient(
     "https://laxhmadhlmafruoigkjm.supabase.co",
     "sb_publishable_pfznL70y3y5llqAMftMImA_BR53pABI"
