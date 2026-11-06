@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Settings - Akkana</title>
+  </head>
+  <body>
+     
+  <button id="menu">☰</button>
+ <div class="menu-bar">
+      <aside>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="people.html">People</a>
+        <a href="generate.html">Generate</a>
+        <a href="shop.html">Shop</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="more.html">More</a>
+        <a href="settings.html">Settings</a>
+      </aside>
+    </div>
+
+    <p id="warn"></p>
+
+    <div class="settings">
+        <h1>Settings</h1>
+
+        <h3>Insert API Key</h3>
+        <P>An API key is needed to use the Generate and AI features. Don't have one? <button onclick="APIKey()">Click here! </button>
+        <p>
+          <input type="text" id="api-key-input" placeholder="Insert API Key" />
+          <button onclick="APIPaste()">Confirm</button>
+        </p>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="api-key-modal">
+        <h2>Get API Key</h2>
+        <p>To get an API key, visit this website: <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI API Keys</a></p>
+        <p>1. Sign up or login in that website.</p>
+        <p>2. Navigate to the API keys section.</p>
+        <p>3. In the upper right, click "Create new secret key".</p>
+        <p>4. Create a name for the secret key.</p>
+        <p>5. Set expiration to however you want.</p>
+        <p>6. Click "Create secret key".</p>
+        <p>7. Copy the text.</p>
+        <p>8. Then back to this website, go to Settings, then paste it to Insert API Key, and click confirm.</p>
+        <button id="api-key-modal-back" onclick="APIKeyback()">Go back</button>
+      </div>
+    
+
+    <script src="script.js">
+
+    </script>
+  </body>
+</html>

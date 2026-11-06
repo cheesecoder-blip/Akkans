@@ -130,5 +130,44 @@ async function registerUser() {
 
 document.getElementById("submit-signup").addEventListener("click", registerUser);
 
+async function loginUser() {
+    const username = document.getElementById("user-signin").value.trim();
+    const password = document.getElementById("pass-signin").value;
+
+    if (!username || !password) {
+        alert("Please enter your username and password.");
+        return;
+    }
+
+    const { data: email, error: lookupError } = await supabaseClient.rpc(
+        "get_email_by_username",
+        { input_username: username }
+    );
+
+    if (lookupError) {
+        console.error(lookupError);
+        alert("Unable to process login. Please try again.");
+        return;
+    }
+
+    if (!email) {
+        alert("Incorrect username or password.");
+        return;
+    }
+
+    const { error: loginError } = await supabaseClient.auth.signInWithPassword({
+        email: email,
+        password: password
+    });
+
+    if (loginError) {
+        alert("Incorrect username or password.");
+        return;
+    }
+
+    window.location.href = "dashboard/dashboard.html";
+}
+
+document.getElementById("submit-signin").addEventListener("click", loginUser);
 window.signUp = signUp;
 window.signIn = signIn;
